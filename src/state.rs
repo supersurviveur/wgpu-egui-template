@@ -155,7 +155,7 @@ impl State {
         {
             let screen_descriptor = ScreenDescriptor {
                 size_in_pixels: [self.size.width, self.size.height],
-                pixels_per_point: 1.,
+                pixels_per_point: self.window.scale_factor() as f32,
             };
             self.egui_state.begin_frame(&self.window);
 
