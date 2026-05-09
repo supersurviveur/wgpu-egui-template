@@ -95,6 +95,7 @@ impl EguiState {
             label: Some("egui main render pass"),
             timestamp_writes: None,
             occlusion_query_set: None,
+            multiview_mask: None,
         });
 
         self.renderer

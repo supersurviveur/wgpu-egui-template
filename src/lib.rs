@@ -148,7 +148,7 @@ impl ApplicationHandler<State> for App {
             WindowEvent::RedrawRequested => {
                 let delta = Instant::now() - self.last_redraw;
                 if delta > Duration::from_millis(1000 / MAX_FPS) {
-                    state.render();
+                    state.render().unwrap();
                 } else {
                     #[cfg(not(target_arch = "wasm32"))]
                     std::thread::sleep(delta / 10);

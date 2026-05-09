@@ -1,12 +1,12 @@
-# Wgpu + Winit + Egui + WebAssembly template
+# Wgpu + Wesl + Winit + Egui + WebAssembly template
 
 This is a template repository to get started with wgpu and egui, also working in webassembly.
 
 ## Versions
 
-| Wgpu | Egui   | Winit  |
-| ---- | ------ | ------ |
-| `27` | `0.33` | `0.30` |
+| Wgpu | Egui   | Winit  | Wesl  |
+| ---- | ------ | ------ | ----- |
+| `29` | `0.34` | `0.30` | `0.3` |
 
 ## Get Started
 

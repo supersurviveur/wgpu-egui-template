@@ -7,24 +7,24 @@ edition = "2024"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-anyhow = "1.0"
-bytemuck = "1"
-cgmath = "0.18"
-crevice = { version = "0.18", features = ["cgmath"] }
-egui = "0.33"
-egui-wgpu = "0.33"
-egui-winit = { version = "0.33", default-features = false }
+anyhow = "1"
+egui = "0.34"
+egui-wgpu = "0.34"
+egui-winit = { version = "0.34", default-features = false }
 env_logger = "0.11"
 log = "0.4"
 pollster = "0.4"
-wgpu = "27"
+wgpu = "29"
 winit = { version = "0.30", features = ["android-native-activity"] }
+wesl = "0.3"
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 console_error_panic_hook = "0.1"
 console_log = "1"
-wgpu = { version = "27", features = ["webgl"] }
+wgpu = { version = "29", features = ["webgl"] }
 wasm-bindgen = "0.2"
 wasm-bindgen-futures = "0.4"
-web-sys = "0.3"
-web-time = "1.1"
+web-time = "1"
+
+[build-dependencies]
+wesl = "0.3"
